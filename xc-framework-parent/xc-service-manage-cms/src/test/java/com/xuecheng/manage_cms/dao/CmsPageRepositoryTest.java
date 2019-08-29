@@ -52,7 +52,7 @@ public class CmsPageRepositoryTest {
         //条件值对象
         CmsPage cmsPage= new CmsPage();
         //要查询5a751fab6abb5044e0d19ea1站点的页面
-//        cmsPage.setSiteId("5b30b052f58b4411fc6cb1cf");
+        cmsPage.setSiteId("5a751fab6abb5044e0d19ea1");
         //设置模板id条件
 //        cmsPage.setTemplateId("5ad9a24d68db5239b8fef199");
         //设置页面别名

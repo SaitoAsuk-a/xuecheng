@@ -145,7 +145,7 @@ public class PageService {
     public CmsPageResult add(CmsPage cmsPage) {
         if(cmsPage == null){
             //抛出异常，非法参数异常..指定异常信息的内容
-
+            ExceptionCast.cast(CmsCode.CMS_PARAMETER_ERROR);
         }
         //校验页面名称、站点Id、页面webpath的唯一性
         //根据页面名称、站点Id、页面webpath去cms_page集合，如果查到说明此页面已经存在，如果查询不到再继续添加
@@ -162,6 +162,7 @@ public class PageService {
         return new CmsPageResult(CommonCode.SUCCESS,cmsPage);
 
     }
+
     //根据页面id查询页面
     public CmsPage getById(String id){
         Optional<CmsPage> optional = cmsPageRepository.findById(id);
