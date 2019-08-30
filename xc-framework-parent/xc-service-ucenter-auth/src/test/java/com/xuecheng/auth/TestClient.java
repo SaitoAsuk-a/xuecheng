@@ -85,7 +85,7 @@ public class TestClient {
     @Test
     public void testPasswrodEncoder(){
         //原始密码
-        String password = "111111";
+        String password = "XcWebApp";
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
         //使用BCrypt加密，每次加密使用一个随机盐
         for(int i=0;i<10;i++){
