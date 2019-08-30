@@ -23,10 +23,6 @@ import java.io.IOException;
 import java.net.URI;
 import java.util.Map;
 
-/**
- * @author Administrator
- * @version 1.0
- **/
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class TestClient {
